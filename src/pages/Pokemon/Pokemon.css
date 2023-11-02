@@ -1,3 +1,27 @@
-.Pokemon {
+@font-face {
+    font-family: 'PokemonRBY-font';
+    src: url('../../assets/Pokemon\ Classic.ttf') format('truetype');
+  }
 
+.Pokemon {
+    height: 100vh;
+    display: grid;
+}
+
+.sprite {
+    justify-self: center;
+    height: 40%;
+}
+
+.image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+.info {
+    font-family: 'PokemonRBY-font';
 }

@@ -4,7 +4,11 @@
   }
 
 .Home {
-    height: 100%;
+    background-image: url('../../assets/pikachuBalao.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     display: grid;
 }
 
@@ -27,10 +31,16 @@
     justify-content: flex-start;
     width: 100%;
     height: 50%;
+    text-decoration: none;
 }
 
 .dialog-content {
     font-family: 'PokemonRBY-font';
     background-color: white;
+    border: none;
+}
+
+.dialog-content:hover {
+    cursor: pointer;
 }
 

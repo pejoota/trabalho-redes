@@ -1,37 +1,36 @@
+@font-face {
+    font-family: 'PokemonRBY-font';
+    src: url('../../assets/Pokemon\ Classic.ttf') format('truetype');
+  }
+
 .Home {
-    width: 20%;
-    padding-left: 40%;
-    padding-top: 35%;
-    height: 10%;
-}
-
-.botoes {
     height: 100%;
-    margin: 5%;
+    display: grid;
 }
 
-.button {
-    transition-duration: 0.1s;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    background-color: #008CBA;
-    width: 40%;
-    height: 100%;
-    box-shadow: 0 9px #999;
-
+.dialog-box {
+    display: grid;
+    background-image: url('../../assets/dialog_box.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-self: center;
+    justify-content: center;
+    align-self: flex-end;
+    align-items: center;
+    height: 30%;
+    width: 28%;
+    margin-bottom: 2.5%;
 }
 
-.button:hover {
-    cursor: pointer;
-  }
+.dialog {
+    display: grid;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50%;
+}
 
-  .button:active {
-    background-color: #00526d;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
+.dialog-content {
+    font-family: 'PokemonRBY-font';
+    background-color: white;
+}
+

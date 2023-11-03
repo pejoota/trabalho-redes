@@ -5,11 +5,11 @@ export default function Home() {
     return(
         <div className='Home'>
             <div className='dialog-box'>
-                <Link className='dialog' to='Pokemon' style={{paddingTop: '10%'}}>
+                {/* <Link className='dialog' to='Pokemon' style={{paddingTop: '10%'}}>
                     <button className='dialog-content'>
                         Registrar Pokémon
                     </button>
-                </Link>
+                </Link> */}
                 <Link className='dialog' to='Pokemon' style={{paddingBottom: '10%'}}>
                     <button className='dialog-content'>
                         Ver Pokédex

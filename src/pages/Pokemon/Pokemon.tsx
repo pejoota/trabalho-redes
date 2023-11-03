@@ -7,7 +7,7 @@ export default function Pokemon() {
     const [pokemon, setPokemon] = useState('bulbasaur');
     const [input, setInput] = useState('bulbasaur');
 
-    const { loading: loading, error: error, data: data = []} = useFetch(`${baseUrl}/pokemon/${pokemon}`, {}, [pokemon])
+    const {loading, error, data = []} = useFetch(`${baseUrl}/pokemon/${pokemon}`, {}, [pokemon])
     const { loading: loading2, error: error2, data: data2 = []} = useFetch(`${baseUrl}/pokemon-species/${pokemon}`, {}, [pokemon])
 
     if(!error && !loading && !error2 && !loading2){ 
@@ -33,11 +33,11 @@ export default function Pokemon() {
                         }).flavor_text}
                     </div>
                 </div>
-                <div>
-                <form>
-                    <input type="text" onChange={e => setInput(e.target.value)}/>
-                    <button onClick={() => setPokemon(input)}>Search</button>
-                </form>
+                <div className='search-bar'>
+                    <form>
+                        <input className='input' type="text" onChange={e => setInput(e.target.value)}/>
+                        <button onClick={() => setPokemon(input)}>Search</button>
+                    </form>
                 </div>
             </div>
         );}
